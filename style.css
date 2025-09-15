@@ -1,13 +1,18 @@
-/* --- Глобальные стили --- */
+/* --- Глобальні стилі --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 :root {
-    --primary-color: #337ab7;
+    --primary-color: #007bff;
     --secondary-color: #f8f9fa;
     --text-color: #343a40;
-    --heading-color: #004d99;
+    --light-text-color: #fff;
+    --heading-color: #0056b3;
+    --bg-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
@@ -25,22 +30,23 @@ main {
 header {
     text-align: center;
     padding: 60px 0;
-    background: linear-gradient(135deg, var(--primary-color), #295280);
-    color: #fff;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: var(--light-text-color);
+    box-shadow: 0 4px 10px var(--shadow-color);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
     font-size: 3em;
+    font-weight: 700;
 }
 
 .tagline {
     font-size: 1.5em;
     font-weight: 300;
-    font-style: normal;
+    margin-top: 10px;
 }
 
 .profile-pic {
@@ -52,23 +58,24 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* --- Секции --- */
+/* --- Секції --- */
 section {
-    background-color: #fff;
-    padding: 30px;
-    margin-bottom: 20px;
+    background-color: var(--bg-color);
+    padding: 40px;
+    margin-bottom: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 section h2 {
     color: var(--heading-color);
     border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-top: 0;
+    font-weight: 700;
 }
 
-/* --- Навыки --- */
+/* --- Навички --- */
 #skills ul {
     list-style-type: none;
     padding: 0;
@@ -79,30 +86,31 @@ section h2 {
 
 #skills li {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--light-text-color);
     padding: 10px 20px;
     border-radius: 25px;
     font-size: 1em;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 #skills li:hover {
-    background-color: #2a6196;
+    background-color: #0056b3;
     transform: scale(1.05);
+    box-shadow: 0 5px 15px var(--shadow-color);
 }
 
-/* --- Карточки проектов --- */
+/* --- Карточки проєктів --- */
 .project-card {
     border: 1px solid #e0e0e0;
     padding: 25px;
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px var(--shadow-color);
 }
 
 .project-card h3 {
@@ -110,39 +118,45 @@ section h2 {
     color: var(--primary-color);
 }
 
+.project-card p {
+    margin-top: 5px;
+}
+
 .project-card a {
     text-decoration: none;
-    color: #007bff;
+    color: var(--primary-color);
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 .project-card a:hover {
+    color: var(--heading-color);
     text-decoration: underline;
 }
 
 /* --- Футер --- */
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0;
     color: #777;
     font-size: 0.9em;
 }
 
-/* --- Адаптивность для мобильных устройств --- */
+/* --- Адаптивність для мобільних пристроїв --- */
 @media (max-width: 768px) {
     header {
         padding: 40px 20px;
     }
 
     header h1 {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
     .tagline {
         font-size: 1.2em;
     }
-
+    
     section {
-        padding: 20px;
+        padding: 25px;
     }
 }
