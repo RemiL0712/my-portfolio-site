@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Инициализация переключателя темы
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+    
+    // Проверяем сохраненную тему
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+    
+    // Обработчик клика по кнопке темы
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+    
+    function updateThemeIcon(theme) {
+        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+
+    // Инициализация меню загрузки
     const downloadBtn = document.getElementById('downloadBtn');
     const downloadMenu = document.getElementById('downloadMenu');
     const closeBtn = downloadMenu.querySelector('.close-btn');
