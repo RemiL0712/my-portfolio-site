@@ -1,6 +1,26 @@
 /* --- Глобальні стилі --- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+/* Skip link для клавиатурной навігації */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: var(--primary-color);
+    color: var(--light-text-color);
+    border-radius: 6px;
+    z-index: 1000;
+}
 :root {
     --primary-color: #007bff;
     --secondary-color: #f8f9fa;

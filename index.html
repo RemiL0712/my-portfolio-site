@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Антон Пінчук | Портфоліо</title>
+    <meta name="description" content="Портфоліо Антона Пінчука — Python developer і веб-ентузіаст. Проєкти на Flask, інструменти на Python, практичні рішення для автоматизації та веб-скрейпінгу.">
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Антон Пінчук | Портфоліо">
+    <meta property="og:description" content="Портфоліо Антона Пінчука — Python developer і веб-ентузіаст. Проєкти на Flask, інструменти на Python, практичні рішення для автоматизації та веб-скрейпінгу.">
+    <meta property="og:image" content="img/photo_2025-09-01_23-09-14.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <a class="skip-link" href="#main">Перейти до контенту</a>
+
     <header>
+        <img src="img/photo_2025-09-01_23-09-14.jpg" alt="Портрет Антона Пінчука" class="profile-pic" width="150" height="150" loading="lazy">
         <h1>Антон Пінчук</h1>
         <p class="tagline">Python Developer | Web Enthusiast</p>
     </header>
 
-    <main>
+    <main id="main">
         <section id="about">
             <h2>Про мене</h2>
             <p>
@@ -40,7 +54,7 @@
                 <p>
                     Повноцінний менеджер завдань на <strong>Flask</strong> з використанням <strong>SQLite</strong> та <strong>SQLAlchemy</strong>. Додаток дозволяє користувачам додавати, редагувати, видаляти та позначати завдання як виконані. Інтерактивність інтерфейсу забезпечена за допомогою <strong>JavaScript</strong>.
                 </p>
-                <a href="https://github.com/RemiL0712/Flask-Task-Manager" target="_blank">Переглянути на GitHub</a>
+                <a href="https://github.com/RemiL0712/Flask-Task-Manager" target="_blank" rel="noopener noreferrer">Переглянути на GitHub</a>
             </div>
             
             <div class="project-card">
@@ -48,7 +62,7 @@
                 <p>
                     Автоматизований інструмент, написаний на <strong>Python</strong>, що розпізнає та сортує файли різних типів (зображення, документи, архіви) по відповідних папках. Це рішення для ефективної організації файлового простору та підвищення продуктивності.
                 </p>
-                <a href="https://github.com/RemiL0712/Python-File-Sorter" target="_blank">Переглянути на GitHub</a>
+                <a href="https://github.com/RemiL0712/Python-File-Sorter" target="_blank" rel="noopener noreferrer">Переглянути на GitHub</a>
             </div>
             
             <div class="project-card">
@@ -56,15 +70,23 @@
                 <p>
                     Веб-додаток на <strong>Python</strong> та <strong>Flask</strong> для динамічного збору даних з вебсайтів. Застосунок дозволяє користувачам вводити URL, після чого збирає та відображає структуровану інформацію в зручному табличному форматі. Включає надійну обробку помилок.
                 </p>
-                <a href="https://github.com/RemiL0712/Web_Scraper_Project" target="_blank">Переглянути на GitHub</a>
+                <a href="https://github.com/RemiL0712/Web_Scraper_Project" target="_blank" rel="noopener noreferrer">Переглянути на GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Telegram Mirror Bot</h3>
+                <p>
+                    Бот для Telegram, який дублює (mirror) повідомлення між чатами/каналами. Реалізований на Python з використанням офіційного API/бібліотек, підтримує фільтрацію повідомлень, логування та налаштування прав доступу.
+                </p>
+                <a href="https://github.com/RemiL0712/telegram-mirror-bot" target="_blank" rel="noopener noreferrer">Переглянути на GitHub</a>
             </div>
         </section>
 
         <section id="contact">
             <h2>Контакти</h2>
             <p>Email: <a href="mailto:molodecdobry@gmail.com">molodecdobry@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/RemiL0712" target="_blank">RemiL0712</a></p>
-            <p>Telegram: <a href="https://t.me/anton_pin4uk" target="_blank">@anton_pin4uk</a></p>
+            <p>GitHub: <a href="https://github.com/RemiL0712" target="_blank" rel="noopener noreferrer">RemiL0712</a></p>
+            <p>Telegram: <a href="https://t.me/anton_pin4uk" target="_blank" rel="noopener noreferrer">@anton_pin4uk</a></p>
             <p>Телефон: <a href="tel:+38678442449">+38 (067) 844-24-49</a></p>
         </section>
     </main>
