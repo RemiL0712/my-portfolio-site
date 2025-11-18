@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flask Task Manager — Backend with JWT and Tasks API</title>
+  <meta name="description" content="Flask Task Manager — a backend project built with Flask, JWT authentication, CRUD operations for tasks, Swagger UI documentation, database migrations and Docker support." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header>
+    <div class="language-toggle-wrapper">
+    <div class="language-toggle">
+      <a href="flask-task-manager.html" class="lang-option">UA 🇺🇦</a>
+      <span class="lang-option active">EN 🇬🇧</span>
+    </div>
+    </div>
+    <a href="../index-en.html" class="back-link">← Back to portfolio</a>
+    <h1>Flask Task Manager — backend with JWT and tasks</h1>
+    <p class="subtitle">
+      A compact, structured <strong>REST API</strong> built with <strong>Flask</strong>.
+      Users can register, log in via JWT, and manage their own tasks. The API
+      is documented via Swagger UI and prepared for Docker-based deployment.
+    </p>
+
+    <div class="badges">
+      <img alt="Flask" src="https://img.shields.io/badge/Flask-3.x-000000?logo=flask&logoColor=white">
+      <img alt="Python" src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white">
+      <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white">
+      <img alt="Docker" src="https://img.shields.io/badge/Docker-ready-0db7ed?logo=docker&logoColor=white">
+      <img alt="License" src="https://img.shields.io/badge/License-MIT-green">
+    </div>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Project overview</h2>
+      <p>
+        This is a learning <strong>REST API</strong> for a simple task manager
+        built on <strong>Flask</strong>. Each user has their own task list,
+        available only after <strong>JWT authentication</strong>.
+      </p>
+      <ul>
+        <li>🔐 User registration, login and JWT-based authentication.</li>
+        <li>🧾 CRUD operations for tasks (create, read, update, delete).</li>
+        <li>📚 Automatic API documentation via <code>Swagger UI</code> on <code>/api/</code>.</li>
+        <li>🐳 Docker configuration for fast local startup.</li>
+        <li>⚙️ Database migrations via <code>Flask-Migrate</code> (Alembic).</li>
+        <li>🔑 Configuration via <code>.env</code> for secrets and DB settings.</li>
+      </ul>
+
+      <div class="cta">
+        <a class="primary" href="https://github.com/RemiL0712/Flask-Task-Manager" target="_blank" rel="noopener noreferrer">
+          View GitHub repository
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tech stack</h2>
+      <ul>
+        <li>Flask 3.x, Flask-RESTX (Swagger UI)</li>
+        <li>Flask-JWT-Extended</li>
+        <li>SQLAlchemy ORM</li>
+        <li>Flask-Migrate (Alembic)</li>
+        <li>PostgreSQL</li>
+        <li>Docker / docker-compose</li>
+        <li>python-dotenv</li>
+      </ul>
+
+      <h2>Goal of the project</h2>
+      <p class="tagline">
+        To demonstrate that I can build a basic but well-structured backend:
+        authentication, database, migrations, documentation and Dockerization.
+      </p>
+      <ul class="meta-list">
+        <li><span class="label">Type:</span> pet project / learning project</li>
+        <li><span class="label">Role:</span> backend developer (solo)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>My responsibilities</h2>
+    <ul>
+      <li>Designed the application structure (models, resources, extensions).</li>
+      <li>Implemented JWT authentication and protected private endpoints.</li>
+      <li>Configured PostgreSQL, DB migrations and environment-based settings.</li>
+      <li>Documented all routes via Swagger UI for easy testing and onboarding.</li>
+      <li>Prepared Docker configuration so the project can be run locally in one command.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Key endpoints</h2>
+    <ul>
+      <li><code>POST /auth/register</code> — user registration.</li>
+      <li><code>POST /auth/login</code> — login, returns JWT token.</li>
+      <li><code>GET /tasks/</code> — list of tasks for the current user.</li>
+      <li><code>POST /tasks/</code> — create a new task.</li>
+      <li><code>PATCH /tasks/{id}</code> — update an existing task.</li>
+      <li><code>DELETE /tasks/{id}</code> — delete a task.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Quick start (local)</h2>
+    <pre><code># 1. Create and activate virtual environment
+python -m venv .venv
+# Windows:
+#   .venv\Scripts\activate
+# Linux / macOS:
+#   source .venv/bin/activate
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Configure environment
+cp .env.example .env
+# (set DATABASE_URL, JWT_SECRET_KEY, etc.)
+
+# 4. Apply database migrations
+flask db upgrade
+
+# 5. Run the application
+python wsgi.py
+# or
+# flask run
+
+# API docs: http://127.0.0.1:5000/api/</code></pre>
+  </section>
+
+  <section class="card">
+    <h2>What this project says about me</h2>
+    <ul>
+      <li>I understand the basics of building a REST API and JWT-based auth.</li>
+      <li>I can work with DB migrations and keep schema changes under control.</li>
+      <li>I prepare projects so that other developers can easily run and test them.</li>
+    </ul>
+  </section>
+</body>
+</html>

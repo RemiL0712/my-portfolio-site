@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telegram Mirror Bot — mirroring messages between chats</title>
+  <meta name="description" content="Telegram Mirror Bot — a Python-based Telegram bot that mirrors messages between chats or channels with filtering and logging. Useful for cross-posting and monitoring." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header>
+    <div class="language-toggle-wrapper">
+    <div class="language-toggle">
+      <a href="telegram-mirror-bot.html" class="lang-option">UA 🇺🇦</a>
+      <span class="lang-option active">EN 🇬🇧</span>
+    </div>
+    </div>
+    <a href="../index-en.html" class="back-link">← Back to portfolio</a>
+    <h1>Telegram Mirror Bot — mirroring messages between chats</h1>
+    <p class="subtitle">
+      A <strong>Telegram bot</strong> that automatically mirrors messages from
+      source chats/channels to target ones. Suitable for cross-posting content
+      or logging activity between multiple groups.
+    </p>
+
+    <div class="badges">
+      <img alt="Python" src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white">
+      <img alt="Telegram" src="https://img.shields.io/badge/Telegram-Bot%20API-26A5E4?logo=telegram&logoColor=white">
+      <img alt="Type" src="https://img.shields.io/badge/Type-automation-444">
+    </div>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Bot functionality</h2>
+      <p>
+        The bot listens to messages in configured source chats/channels and
+        forwards them to one or more target chats. This makes it easy to keep
+        several groups or channels in sync without manual copying.
+      </p>
+      <ul>
+        <li>🔁 Mirroring messages between chats and channels.</li>
+        <li>🧱 Support for multiple source → target pairs.</li>
+        <li>🔍 Simple filtering by content type (text, media, etc.).</li>
+        <li>📜 Logging of important events (what was forwarded and where).</li>
+        <li>🔑 Configuration via environment variables or config file.</li>
+      </ul>
+
+      <div class="cta">
+        <a class="primary" href="https://github.com/RemiL0712/telegram-mirror-bot" target="_blank" rel="noopener noreferrer">
+          View GitHub repository
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tech stack</h2>
+      <ul>
+        <li>Python 3.x</li>
+        <li>Telegram Bot API (Python library)</li>
+        <li><code>logging</code> for activity logs</li>
+        <li>Environment variables / config file for bot settings</li>
+      </ul>
+
+      <h2>Goal of the project</h2>
+      <p class="tagline">
+        To demonstrate experience with Telegram Bot API, automation flows and
+        building small but useful helpers for chats.
+      </p>
+      <ul class="meta-list">
+        <li><span class="label">Type:</span> pet project / automation</li>
+        <li><span class="label">Role:</span> Python & bot developer</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>My responsibilities</h2>
+    <ul>
+      <li>Designed the mapping logic between source and target chats.</li>
+      <li>Implemented the main update loop and forwarding logic.</li>
+      <li>Added basic filtering of content and logging.</li>
+      <li>Configured flexible settings via environment variables / config.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Quick start (concept)</h2>
+    <pre><code># 1. Clone the repository
+git clone https://github.com/RemiL0712/telegram-mirror-bot.git
+cd telegram-mirror-bot
+
+# 2. Create and fill .env
+TELEGRAM_BOT_TOKEN=...
+SOURCE_CHAT_ID=...
+TARGET_CHAT_ID=...
+
+# 3. Install dependencies and run
+pip install -r requirements.txt
+python main.py</code></pre>
+  </section>
+
+  <section class="card">
+    <h2>What this project says about me</h2>
+    <ul>
+      <li>I work confidently with Telegram bots and Bot API.</li>
+      <li>I can build small automation tools that solve real tasks.</li>
+      <li>I think about support and debugging (logs, config, structure).</li>
+    </ul>
+  </section>
+</body>
+</html>

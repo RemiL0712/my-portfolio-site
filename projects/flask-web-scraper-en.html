@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flask Web Scraper — collecting data via web interface</title>
+  <meta name="description" content="Flask Web Scraper — a Python and Flask-based web application for scraping data from websites and displaying results in a table. Includes error handling and a simple UI." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header>
+    <div class="language-toggle-wrapper">
+    <div class="language-toggle">
+      <a href="flask-web-scraper.html" class="lang-option">UA 🇺🇦</a>
+      <span class="lang-option active">EN 🇬🇧</span>
+    </div>
+    </div>
+    <a href="../index-en.html" class="back-link">← Back to portfolio</a>
+    <h1>Flask Web Scraper — collecting data via web interface</h1>
+    <p class="subtitle">
+      A small web application built with <strong>Python</strong> and
+      <strong>Flask</strong>, where the user enters a URL and scraping
+      parameters, and the app returns structured data in table format.
+    </p>
+
+    <div class="badges">
+      <img alt="Flask" src="https://img.shields.io/badge/Flask-2.x-000000?logo=flask&logoColor=white">
+      <img alt="Python" src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white">
+      <img alt="Scraping" src="https://img.shields.io/badge/Scraping-requests%20%7C%20BeautifulSoup-555">
+    </div>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Project overview</h2>
+      <p>
+        The user opens a page with a form, enters the target URL and scraping
+        parameters (for example, CSS selectors or keywords), starts the
+        scraping, and receives structured data in a table.
+      </p>
+      <ul>
+        <li>🌐 Form for entering URL and scraping options.</li>
+        <li>📊 Tabular output of results.</li>
+        <li>🛡 Error handling (unreachable site, invalid URL, timeouts).</li>
+        <li>📎 Ability to quickly repeat scraping with different parameters.</li>
+      </ul>
+
+      <div class="cta">
+        <a class="primary" href="https://github.com/RemiL0712/Web_Scraper_Project" target="_blank" rel="noopener noreferrer">
+          View GitHub repository
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tech stack</h2>
+      <ul>
+        <li>Flask (routes and templates)</li>
+        <li><code>requests</code> for HTTP requests</li>
+        <li><code>BeautifulSoup</code> (or similar) for HTML parsing</li>
+        <li>Jinja2 templates for displaying tables</li>
+      </ul>
+
+      <h2>Goal of the project</h2>
+      <p class="tagline">
+        To demonstrate the ability to build a simple but useful web tool
+        for non-technical users on top of web scraping with Python.
+      </p>
+      <ul class="meta-list">
+        <li><span class="label">Type:</span> pet project / internal tool</li>
+        <li><span class="label">Role:</span> Python & Flask developer (solo)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>My responsibilities</h2>
+    <ul>
+      <li>Designed the Flask application structure (routes, templates, logic).</li>
+      <li>Implemented scraping logic and basic validation of user input.</li>
+      <li>Configured friendly tabular output for scraped data.</li>
+      <li>Handled 4xx/5xx errors, timeouts and invalid selectors.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Typical user flow</h2>
+    <ol>
+      <li>User opens the scraping page.</li>
+      <li>Enters the target URL.</li>
+      <li>Specifies scraping parameters (for example, CSS selector).</li>
+      <li>Starts scraping and receives the results in a table.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>What this project says about me</h2>
+    <ul>
+      <li>I can combine web scraping and a user-friendly web interface.</li>
+      <li>I think in terms of user scenarios, not just low-level code.</li>
+      <li>I pay attention to error handling and stability of the tool.</li>
+    </ul>
+  </section>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FastAPI Task Manager — Backend with JWT and health checks</title>
+  <meta name="description" content="FastAPI Task Manager — backend project built with FastAPI and PostgreSQL, including JWT authentication, CRUD operations for tasks, health checks, Swagger documentation, Docker and migrations." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header>
+    <div class="language-toggle-wrapper">
+    <div class="language-toggle">
+      <a href="fastapi-task-manager.html" class="lang-option">UA 🇺🇦</a>
+      <span class="lang-option active">EN 🇬🇧</span>
+    </div>
+    </div>
+
+    <a href="../index-en.html" class="back-link">← Back to portfolio</a>
+    <h1>FastAPI Task Manager — backend with JWT and health checks</h1>
+    <p class="subtitle">
+      A <strong>FastAPI</strong>-based version of the Task Manager.  
+      It provides JWT authentication, task management endpoints, health checks,
+      documentation, and a Docker-oriented setup.
+    </p>
+
+    <div class="badges">
+      <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white">
+      <img alt="Python" src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white">
+      <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white">
+      <img alt="Docker" src="https://img.shields.io/badge/Docker-ready-0db7ed?logo=docker&logoColor=white">
+      <img alt="License" src="https://img.shields.io/badge/License-MIT-green">
+    </div>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Project overview</h2>
+      <p>
+        This is a <strong>REST API</strong> for managing tasks, implemented with
+        <strong>FastAPI</strong>. Users register, log in, get a JWT token, and
+        work with their personal task list. The project also includes health
+        checks and API documentation.
+      </p>
+      <ul>
+        <li>🔐 JWT authentication: registration, login and protected routes.</li>
+        <li>🧾 Tasks: create, read, update, delete for the current user.</li>
+        <li>🩺 Health endpoints: <code>/health/live</code>, <code>/health/ready</code>.</li>
+        <li>📚 Swagger documentation at <code>/api-docs</code>.</li>
+        <li>🌍 (Optionally) multi-language responses via headers or query params.</li>
+      </ul>
+
+      <div class="cta">
+        <a class="primary" href="https://github.com/RemiL0712/FastAPI-Task-Manager" target="_blank" rel="noopener noreferrer">
+          View GitHub repository
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tech stack</h2>
+      <ul>
+        <li>FastAPI, Pydantic</li>
+        <li>PostgreSQL, SQLAlchemy</li>
+        <li>Alembic (migrations)</li>
+        <li>Uvicorn</li>
+        <li>Docker / docker-compose</li>
+        <li>JWT library for tokens</li>
+      </ul>
+
+      <h2>Goal of the project</h2>
+      <p class="tagline">
+        To show experience with FastAPI, typed endpoints, health checks, and a
+        production-oriented backend setup.
+      </p>
+      <ul class="meta-list">
+        <li><span class="label">Type:</span> pet project / learning project</li>
+        <li><span class="label">Role:</span> backend developer (solo)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>My responsibilities</h2>
+    <ul>
+      <li>Designed application structure (routers, schemas, services).</li>
+      <li>Implemented JWT authentication and protected routes.</li>
+      <li>Configured PostgreSQL and migrations with Alembic.</li>
+      <li>Added health endpoints and basic service observability.</li>
+      <li>Set up Docker to run the service together with the database.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Key endpoints</h2>
+    <ul>
+      <li><code>POST /auth/register</code> — register a new user.</li>
+      <li><code>POST /auth/login</code> — login and receive JWT token.</li>
+      <li><code>GET /tasks/</code> — list of tasks for the current user.</li>
+      <li><code>POST /tasks/</code> — create a task.</li>
+      <li><code>PATCH /tasks/{id}</code> — update a task.</li>
+      <li><code>DELETE /tasks/{id}</code> — delete a task.</li>
+      <li><code>GET /health/live</code>, <code>/health/ready</code> — service status.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Quick start (Docker)</h2>
+    <pre><code># 1. Clone the repository
+git clone &lt;repository-url&gt;
+cd fastapi-task-manager
+
+# 2. Create and configure environment file
+cp .env.example .env
+# (set DATABASE_URL, JWT_SECRET, etc.)
+
+# 3. Start the service
+docker compose up --build
+
+# API:   http://localhost:8000
+# Docs:  http://localhost:8000/api-docs</code></pre>
+  </section>
+
+  <section class="card">
+    <h2>What this project says about me</h2>
+    <ul>
+      <li>I work not only with Flask, but also with modern frameworks like FastAPI.</li>
+      <li>I can configure a full backend with DB, migrations, Docker and JWT.</li>
+      <li>I care about health checks, documentation and developer experience.</li>
+    </ul>
+  </section>
+</body>
+</html>
