@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Docs Indexer — Python-утиліта для індексації документації</title>
+  <meta name="description" content="Docs Indexer — Python інструмент, який завантажує сторінки документації, розбиває їх на семантичні чанки та зберігає у структурованому форматі для подальшої роботи з LLM." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+<header>
+  <div class="language-toggle-wrapper">
+    <div class="language-toggle">
+      <span class="lang-option active">UA 🇺🇦</span>
+      <a href="docs-indexer-en.html" class="lang-option">EN 🇬🇧</a>
+    </div>
+    </div>
+  <a href="../index.html" class="back-link">← Назад до портфоліо</a>
+  <h1>Docs Indexer — індексація документації</h1>
+
+  <p class="subtitle">
+    Python-утиліта для автоматичної індексації технічної документації:
+    завантаження сторінок, очищення HTML, семантичне чанкування, 
+    збагачення метаданими та експорт у структурований формат.
+  </p>
+
+  <div class="badges">
+    <img alt="Python" src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white">
+    <img alt="Requests" src="https://img.shields.io/badge/Requests-library-blue">
+    <img alt="BeautifulSoup" src="https://img.shields.io/badge/BeautifulSoup-parsing-green">
+    <img alt="CLI" src="https://img.shields.io/badge/Type-CLI%20Utility-444">
+  </div>
+</header>
+
+<section class="grid">
+  <div class="card">
+    <h2>Опис проєкту</h2>
+    <p>
+      <strong>Docs Indexer</strong> — це інструмент, який автоматизує роботу з
+      великою кількістю документації та готує її для використання в LLM моделях
+      або RAG-системах.
+    </p>
+
+    <ul>
+      <li>📥 Завантаження сторінок документації зі списку URL.</li>
+      <li>🧹 Очищення HTML від зайвих елементів.</li>
+      <li>✂️ Семантичне чанкування за розділами та заголовками.</li>
+      <li>🧩 Додавання метаданих (title, url, section, index).</li>
+      <li>📦 Експорт у JSON/Markdown для подальшої індексації.</li>
+      <li>⚙️ Запуск через CLI: <code>python -m docs_indexer</code></li>
+    </ul>
+
+    <div class="cta">
+      <a class="primary" href="https://github.com/RemiL0712/docs-indexer" target="_blank">
+        GitHub репозиторій
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Технології</h2>
+    <ul>
+      <li>Python 3.12</li>
+      <li>Requests — завантаження HTML</li>
+      <li>BeautifulSoup — парсинг</li>
+      <li>re / lxml — очистка DOM</li>
+      <li>CLI запуск через <code>python -m</code></li>
+    </ul>
+
+    <h2>Ціль проєкту</h2>
+    <p class="tagline">
+      Створити гнучкий індексатор документації для подальшого використання в LLM.
+    </p>
+
+    <ul class="meta-list">
+      <li><span class="label">Тип:</span> Dev-tool / automation</li>
+      <li><span class="label">Роль:</span> Python Developer (solo)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Приклад запуску</h2>
+  <pre><code># Запуск індексації
+python -m docs_indexer.main
+
+# Файл зі списком URL:
+data/urls.txt
+
+# Результати:
+data/output/pages.json
+data/output/metadata.json
+</code></pre>
+</section>
+
+<section class="card">
+  <h2>Що цей проєкт показує</h2>
+  <ul>
+    <li>Вміння працювати з HTML, мережевими запитами та структурою документації.</li>
+    <li>Розуміння підготовки даних для LLM / RAG.</li>
+    <li>Досвід створення Python CLI утиліт.</li>
+    <li>Охайна структура проекту та чистий код.</li>
+  </ul>
+</section>
+
+</body>
+</html>

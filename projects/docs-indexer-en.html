@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Docs Indexer — Python documentation indexing tool</title>
+  <meta name="description" content="Docs Indexer — a Python tool for downloading documentation pages, cleaning HTML, splitting into semantic chunks and exporting in a structured format for LLM and RAG pipelines." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+<header>
+  <div class="language-toggle-wrapper">
+    <div class="language-toggle">
+      <a href="docs-indexer.html" class="lang-option">UA 🇺🇦</a>
+      <span class="lang-option active">EN 🇬🇧</span>
+    </div>
+    </div>
+  <a href="../index-en.html" class="back-link">← Back to portfolio</a>
+  <h1>Docs Indexer — documentation indexing tool</h1>
+
+  <p class="subtitle">
+    A Python utility that downloads documentation pages, cleans them, splits
+    content into semantic chunks, attaches metadata and exports everything into
+    a structured format for LLM and RAG systems.
+  </p>
+
+  <div class="badges">
+    <img alt="Python" src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white">
+    <img alt="Requests" src="https://img.shields.io/badge/Requests-library-blue">
+    <img alt="BeautifulSoup" src="https://img.shields.io/badge/BeautifulSoup-parsing-green">
+    <img alt="CLI" src="https://img.shields.io/badge/Type-CLI%20Utility-444">
+  </div>
+</header>
+
+<section class="grid">
+  <div class="card">
+    <h2>Project overview</h2>
+    <p>
+      <strong>Docs Indexer</strong> automates documentation processing by
+      downloading pages, cleaning the raw HTML, splitting content into semantic
+      blocks and enriching it with metadata for further indexing.
+    </p>
+
+    <ul>
+      <li>📥 Downloads documentation pages from URLs.</li>
+      <li>🧹 Cleans HTML from unnecessary elements.</li>
+      <li>✂️ Splits content into semantic chunks.</li>
+      <li>🧩 Adds metadata (title, url, section, index).</li>
+      <li>📦 Exports to JSON/Markdown for LLM pipelines.</li>
+      <li>⚙️ Run via CLI: <code>python -m docs_indexer</code></li>
+    </ul>
+
+    <div class="cta">
+      <a class="primary" href="https://github.com/RemiL0712/docs-indexer" target="_blank">
+        View GitHub repository
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Tech stack</h2>
+    <ul>
+      <li>Python 3.12</li>
+      <li>Requests for downloading HTML</li>
+      <li>BeautifulSoup for parsing</li>
+      <li>lxml / re for cleaning</li>
+      <li>CLI runner via <code>python -m</code></li>
+    </ul>
+
+    <h2>Goal</h2>
+    <p class="tagline">
+      Build a flexible documentation indexer for LLM/RAG processing.
+    </p>
+
+    <ul class="meta-list">
+      <li><span class="label">Type:</span> Dev tool / automation</li>
+      <li><span class="label">Role:</span> Python Developer (solo)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="card">
+  <h2>How to run</h2>
+  <pre><code>python -m docs_indexer.main
+
+# URLs file:
+data/urls.txt
+
+# Output:
+data/output/pages.json
+data/output/meta.json
+</code></pre>
+</section>
+
+<section class="card">
+  <h2>What this project shows about me</h2>
+  <ul>
+    <li>I can build tools for preparing data for LLM/RAG pipelines.</li>
+    <li>I understand HTML parsing, scraping and content processing.</li>
+    <li>I design practical Python CLI utilities.</li>
+    <li>I structure code cleanly and modularly.</li>
+  </ul>
+</section>
+
+</body>
+</html>
